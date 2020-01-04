@@ -1,4 +1,5 @@
 package dataStructure;
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -10,7 +11,7 @@ import utils.Point3D;
  * @author orenl
  *
  */
-public class Node implements node_data{
+public class Node implements node_data , Serializable{
 	
 	public LinkedList<Edge> edge_list;
 	private int key;

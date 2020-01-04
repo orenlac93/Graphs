@@ -1,5 +1,6 @@
 package dataStructure;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -7,14 +8,13 @@ import java.util.LinkedList;
 
 /**
  * This class represents a directional weighted graph.
- * 
  * @author orenl
  *
  */
-public class DGraph implements graph{
+public class DGraph implements graph , Serializable{
 
 	/**
-	 * list of the graph nodes 
+	 * list of the graph nodes
 	 */
 	public LinkedList<Node> nodes_list;
 

@@ -31,9 +31,23 @@ public class Point3D implements Serializable
     /////////////////////////////////////////////////////////////////
     public Point3D(double x,double y,double z)
     {
-        _x=x;
-        _y=y;
-        _z=z;
+    	if((x > 10) || (x < -10)) {
+    		_x = (Math.random()*10);
+    	}
+    	else
+    		_x=x;
+    	
+    	if((y > 10) || (y < -10)) {
+    		_y = (Math.random()*10);
+    	}
+    	else
+    		_y=y;
+    	
+    	if((z > 10) || (z < -10)) {
+    		_z = (Math.random()*10);
+    	}
+    	else
+    		_z=z;
     }
 
     public Point3D(Point3D p)
@@ -42,7 +56,19 @@ public class Point3D implements Serializable
     }
     
     public Point3D(double x,double y){
-    	this(x,y,0);
+    	
+    	if((x > 10) || (x < -10)) {
+    		_x = (Math.random()*10);
+    	}
+    	else
+    		_x=x;
+    	
+    	if((y > 10) || (y < -10)) {
+    		_y = (Math.random()*10);
+    	}
+    	else
+    		_y=y;
+    	
     }
     
     public Point3D(String s) {

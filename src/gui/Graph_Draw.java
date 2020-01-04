@@ -41,7 +41,7 @@ public class Graph_Draw {
 		StdDraw.setCanvasSize(1000 , 1000);
 		StdDraw.setPenRadius(0.03);
 		StdDraw.setPenColor(StdDraw.BLUE);
-		StdDraw.setScale(0 , 10);
+		StdDraw.setScale(-12 , 12);
 		
 		Point3D p = null;
 		int i = 0;
@@ -49,7 +49,7 @@ public class Graph_Draw {
 		while(i < this.graph.nodes_list.size()) {
 			p = this.graph.nodes_list.get(i).getLocation();
 			StdDraw.point(p.x(),p.y());
-			StdDraw.text(p.x(),p.y()+0.2,"" + this.graph.nodes_list.get(i).getKey());
+			StdDraw.text(p.x(),p.y()+0.5,"" + this.graph.nodes_list.get(i).getKey());
 			i++;
 		}
 		
