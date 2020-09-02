@@ -1,12 +1,12 @@
 # Graphs
 
-## Graphs And Algorithms
+## Graphs OOP (JAVA)
 
 this project deals with creation and representation of directed weighted graphs
 
 draw graphs in a graphic window
 
-and execute different graphs algorithms 
+and find shortest paths
 
 # classes:
 
